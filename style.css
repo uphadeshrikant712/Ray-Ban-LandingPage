@@ -1,0 +1,169 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "gilroy";
+}
+html,
+body {
+  width: 100%;
+  height: 100%;
+}
+#main {
+  width: 100%;
+  height: 100vh;
+  /* background-color: black; */
+}
+#back {
+  width: 100%;
+  height: 100vh;
+  /* background-color: black; */
+}
+#back img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+#top {
+  pointer-events: none;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  /* background-color: #060000d8; */
+}
+#workingarea {
+  position: relative;
+  width: 80%;
+  height: 100vh;
+  margin: 0 auto;
+  max-width: 1920px;
+  /* background-color: #0b0101; */
+  /* border: 1px solid red; */
+}
+#nav {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  padding: 2vw 0vw;
+}
+#nav img {
+  height: 6vh;
+}
+#nleft,
+#rleft {
+  display: flex;
+  align-items: center;
+  gap: 4vw;
+}
+#nav a {
+  pointer-events: all;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-size: 1vw;
+  letter-spacing: 0.2vw;
+  font-weight: 700;
+  color: #fff;
+}
+#hero {
+  display: flex;
+  justify-content: space-between;
+  /* background-color: red; */
+  width: 100%;
+  /* height: 100px; */
+  position: absolute;
+  top: 50%;
+  left: 0;
+  transform: translate(0%, -50%);
+}
+#heroleft {
+  /* background-color: yellow; */
+  min-width: 50%;
+  /* height: 100px; */
+}
+#heroleft .elem {
+  position: relative;
+  height: 9vw;
+  overflow: hidden; 
+  /* background-color: red; */
+}
+#heroleft .elem h1:nth-child(1){
+  top:0;
+}
+#heroleft .elem h1 {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  line-height: 0.9;
+  font-family: kajiro;
+  color: #fff;
+  font-size: 11vw;
+  font-weight: 100;
+}
+#heroleft button {
+  pointer-events: all;
+  padding: 0.3vw 3vw;
+  text-transform: capitalize;
+  font-size: 2vw;
+  margin-top: 2vw;
+  font-family: "kajiro";
+  cursor: pointer;
+}
+#heroright {
+  /* background-color: green; */
+  width: 17%;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  color: #fff;
+  /* height: 100px; */
+}
+#heroright p {
+  font-size: 0.7vw;
+  font-weight: 300;
+  text-align: right;
+}
+#heroright #imagediv {
+  width: 100%;
+  margin-top: 1.6vw;
+  margin-bottom: 2vw;
+  height: 120px;
+  background-image: url(https://images.unsplash.com/photo-1622383659984-03e1c9b75d36?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8OXx8cG9ydHJhaXQlMjByYXklMjBiYW4lMjBzdW5nbGFzc2VzJTIwbWVufGVufDB8fDB8fHww);
+  background-size: cover;
+  background-position: center;
+}
+#heroright p:nth-child(3) {
+  /* background-color: red; */
+  margin-bottom: 5vw;
+}
+@media (max-width: 600px) {
+  #nav a {
+    pointer-events: all;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 2vw;
+    letter-spacing: 0.2vw;
+    font-weight: 700;
+    color: #fff;
+  }
+  #heroright p {
+    font-size: 1.7vw;
+    font-weight: 300;
+    text-align: right;
+  }
+  #heroright p:nth-child(4)
+  {
+    visibility: hidden;
+  }
+  
+  #heroleft button {
+    pointer-events: all;
+    padding: 0.3vw 3vw;
+    text-transform: capitalize;
+    font-size: 2vw;
+    margin-top: 12vw;
+    font-family: "kajiro";
+    cursor: pointer;
+  }
+}
